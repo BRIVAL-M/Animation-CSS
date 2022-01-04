@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2b58de1911.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>ANIMATION CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            <span class="TxtColor">✪</span> ANIMATIONS CSS
+            <span class="TxtColor">✪</span>
+        </h1>
+        <a href="https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes"
+            title="Lien vers le cours d'openclassrooms">
+            <h2>
+                Récapitulatif du cours<br /><br />"Créez des animations CSS
+                modernes"<br /><br />OPENCLASSROOMS et plus ;)
+            </h2>
+        </a>
+    </header>
+    <a href="https://www.youtube.com/watch?v=Jdn5a_hFA-4" title="Lien vers le tutoriel pour réaliser ce CUBE !">
+        <div class="container">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </a>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>:hover</h3>
+            <div class="btn">Vois comme je grandis !</div>
+        </div>
+        <div class="resume">
+            <p>
+                Les 5 éléments nécessaires pour créer une transition sont :<br /><br />
+                - une propriété CSS à modifier<br />- une valeur initiale pour votre
+                propriété CSS<br />
+                - une valeur finale pour cette même propriété<br />- une durée<br />-
+                une pseudoclasse pour déclencher l’animation<br /><br />
+                On applique la valeur initiale à l’élément qu’on veut modifier<br />
+                et la valeur finale dans la pseudoclasse qui déclenche la
+                transition<br /><br />
+                La durée peut s’exprimer en secondes :<br /><br />
+                <span class="TxtColor">0.4s, ou en millisecondes : 400ms</span>
+                <br /><br />Les propriétés d’une transition peuvent être déclarées
+                individuellement : <br /><br />
+                <span class="TxtColor">transition-duration: 400ms </span><br /><br />Ou bien combinées en une seule
+                propriété comme :<br /><br />
+                <span class="TxtColor">transition: transform 400ms</span>
+            </p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>:focus + :invalid + :not</h3>
+            <div class="form">
+                <div class="form__group">
+                    <label for="email"></label>
+                    <!--revoir le label-->
+                    <input type="email" name="" id="" />
+                </div>
+                <h3>Inscrit une adresse mail sans @</h3>
+                <div class="btn2">Valider <i class="far fa-check-square"></i></div>
+            </div>
+        </div>
+        <div class="resume">
+            <p>
+                Les pseudoclasses sont essentielles pour déclencher des transitions en
+                CSS<br /><br />
+                <em>Les pseudoclasses les plus adaptées pour déclencher des transitions
+                    sont <br />celles qui impliquent une interaction avec
+                    l’utilisateur</em><br /><br />
+                Les pseudoclasses les plus courantes pour déclencher une transition
+                sont <br /><br />
+                <span class="TxtColor">:hover, :active, :focus, :valid, :invalid, :not(), :checked,
+                    :enabled, et :disabled</span><br /><br />
+                <em>On peut combiner des pseudoclasses entre elles pour créer des
+                    sélecteurs plus précis</em><br />
+                Les pseudoclasses peuvent aussi être utilisés pour changer le style
+                d’un élément voisin.
+            </p>
+        </div>
+    </div>
+    <div class="container2">
+        <h3>:active</h3>
+        <div class="btn2">
+            Gonfle le ballon ! clic long
+            <i class="far fa-arrow-alt-circle-down"></i>
+        </div>
+        <div class="ball">
+            <p><i class="far fa-smile-wink"></i> LoL</p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transition + delay</h3>
+            <div class="btn3">Survole-moi !</div>
+        </div>
+        <div class="resume">
+            <p>
+                Il est possible d’animer autant de propriétés que l’on veut avec les
+                transitions<br /><br />
+                le mot clé <span class="TxtColor">all</span><br /><br />
+                permet d’appliquer des transitions simultanément à toutes les
+                propriétés<br />
+                ou bien on peut séparer les animations par des virgules,<br />
+                ce qui permet de leur donner des valeurs différentes<br /><br />
+                <span class="TxtColor">Exemple : transition: transform 450ms, background-color 300ms</span><br /><br />
+                on peut décaler le départ des transitions avec transition-delay<br />
+                la valeur de <span class="TxtColor">transition-delay</span> peut
+                également être définie <br />directement dans la propriété
+                <span class="TxtColor">transition.</span>
+            </p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn4">ScaleX</div>
+            <div class="box">
+                <i class="far fa-caret-square-left"></i><i class="far fa-caret-square-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn5">Translate</div>
+            <div class="box2"><i class="far fa-hand-point-right"></i></div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn6">Rotate</div>
+            <div class="boxes">
+                <div class="boxes__base boxes--rotDegrees">
+                    <i class="fas fa-sync"></i>rotate(360deg)
+                </div>
+                <div class="boxes__base boxes--rotTurns">
+                    <i class="fas fa-sync"></i>rotate(1turn)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn6">Rotate + Scale</div>
+            <div class="box3"><span>😮</span></div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn7">Translate + Scale</div>
+            <div class="b">
+                <div class="b__base b__base--tranxScale">
+                    box 1<br />translateX()<br />scale()
+                </div>
+                <div class="b__base b__base--scaleTranx">
+                    box 2<br />scale()<br />translateX()
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn8">Skew </div>
+            <div class="b2">
+                <div class="b2--skewX">skewX<br />(50deg)</div>
+                <div class="b2--skewY">skewY<br />(50deg)</div>
+                <div class="b2--skew">skew<br />(50deg, 50deg)</div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform</h3>
+            <div class="btn9">Perspective & rotateX</div>
+            <div class="b3">
+                <div class="b3--perspective75px">Perspective (75px) <br> & rotateX (45deg)</div>
+                <div class="b3--perspective150px">Perspective (150px) <br> & rotateX (45deg)</div>
+                <div class="b3--perspective300px">Perspective (300px) <br> & rotateX (45deg)</div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+       <p>La propriété <em>transform</em> nous permet de manipuler et animer nos sites <br> 
+        de presque toutes les manières, et comme tout se passe <br> pendant l’étape composition, 
+        les animations sont bien fluides sur tous les supports<br><br>
+        on peut déplacer des éléments avec les fonctions translate : <br><br><span class="TxtColor">translate(),  translateX(),  translateY()  et  translate3d()</span><br><br>
+        on peut agrandir avec les fonctions scale : <br><br> <span class="TxtColor">scale(),  scaleX(),  scaleY()  et  scale3d()</span> <br><br>
+        et on peut les faire pivoter grâce aux fonctions rotate : <br><br><span class="TxtColor"> rotate(),  rotateX(),  rotateY() et  rotateZ()</span> <br><br> 
+        Si on ajoute une deuxième propriété  transform, elle annule la première.<br> 
+        On ne peut donc définir qu’une seule propriété  transform  dans un même sélecteur.<br><br>
+        Pour effectuer plusieurs transformations,<br> on peut les lister dans une même propriété transform comme :<br><br>
+        <span class="TxtColor">transform:translateX(200%) scale(2) ;</span><br><br>
+        Une propriété avec plusieurs fonctions exécute les fonctions dans l’ordre,<br> de droite à gauche ;
+        les fonctions de transformations en 3D  comme : <br><br><span class="TxtColor">translate3d(),  rotateZ() et scale3d()</span><br><br>
+        ont également besoin de la fonction perspective pour indiquer au navigateur  <br>la distance à laquelle 
+        l'utilisateur se trouve : plus la distance est grande,<br>  moins l'animation sera marquée.</p>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform-origin</h3>
+            <div class="content">
+                <div class="btn10">CHARGER ! clic long</div>
+                <div class="progress">
+                <div class="progress__bar"><i class="fas fa-angle-double-right"></i></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="container1__adjust">
+            <h3>Transform-origin 3D</h3> 
+         
+                <div class="button3d">
+                      <div class="btn3d">
+                        <div class="btn__flip">
+                            <div class="btn__flip--off">Clic long pour allumer</div>
+                            <div class="btn__flip--on">ON</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Que la force soit avec toi !</h3> 
+            <div class="lightsaber-example">
+                <div class="lightsaber">
+                  <div class="hilt">
+                    <div class="switch"></div>
+                  </div>
+                  <div class="plasma vader"></div>
+                </div>
+              </div>
+              
+              <div class="container1">
+                  <p><em>Transform-origin</em><br><br>Permet de repositionner le point d’ancrage, qui se trouve par défaut au centre
+                    <br> de l’élément ; on peut régler ce point d’origine en utilisant des unités comme :<br><br>
+                    <span class="TxtColor"> px, rem, vh, etc...</span><br><br>
+                    il est aussi possible d'utiliser des pourcentages pour X et Y ;<br>
+                    ou encore, on peut utiliser des mots clés :<br><br> 
+                    <span class="TxtColor">left et right pour l’axe X, top et bottom pour l’axe Y, et center pour les deux </span><br><br> 
+                    il est possible de ne pas indiquer la valeur de l'axe Y ou,<br> 
+                    quand on utilise des mots clés, de mettre uniquement une valeur :<br> 
+                    le navigateur comprend de lui-même à quel axe la valeur s'applique ;<br>
+                    quand on change le point d’origine en 3D,<br> la valeur de Z doit être exprimée en unités <br>(et non en pourcentages) ! </p>
+              </div>
+            
+</body>
+<footer></footer>
+
+</html>
